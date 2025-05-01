@@ -11,7 +11,6 @@ public class koneksi {
     public static Connection buatkoneks(){
         Connection cnn = null;
         try{
-            
             Class.forName("com.mysql.cj.jdbc.Driver");
             cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/temanbaik","root","");
             
